@@ -4,29 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
+   
     
     <title>Bray CV</title>
     <link rel="icon" href="favicon.ico?">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100;400;900&family=Signika:wght@300;700&display=swap" rel="stylesheet">
+<!-- JS -->
+<script src="./index.js" defer></script>
 </head>
+
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="img/cloud.png" alt="cloud-img">
-        <h1 class="title">I´m Brayan</h1>
-        <h2 class="title">a Programmer</h2>
-        <img class="bottom-cloud" src="img/cloud.png" alt="cloud-img">
-        <img src="img/mountain.png" alt="mountain-img">
+  <header class="header">
+    <div class="header__content">
+      <div class="header--flex">
+        <img class="me" src="./img/BB.jpg" height="75" width="75" alt="">
+        <div class="header__name"><a class= "header__link" href="./img/BB.jpg">BestBroth</a></div>
+        <img class="header__hamburgue" src="./menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      </div>
+      <nav class=" header__nav is--none">
+        <ul class="header__links">
+          <li><a class="header__link" href="#home">Home</a></li>
+          <li><a class="header__link" href="#about_me">About me</a></li>
+          <li><a class="header__link" href="#skills">Skills</a></li>
+          <li><a class="header__link" href="#academic">Academic</a></li>
+          <li><a class="header__link" href="#experience">Experience</a></li>
+          <li><a class="header__link" href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+      <a class="header__btn-2 is--none" href="mailto:olivaresbrayan0510@gmail.com" >Get Started</a>
     </div>
-    <div class="middle-container">
+    <div class="top-container">
+      <img src="img/Yo_de_cache.png" class="me" height="310" width="250">
+      <h1 class="title">Brayan Olivares</h1>
+      <h2 class="title">Java Developer & FullStack Developer</h2>
+    </div>
+  </header>
+    
+    
+    <div class="middle-container" id="about_me">
         <div class="profile">
-          <img src="img/Yo_de_cache.png" height="350" width="275">
-          <h2>Hello.</h2>
+          <h3>Discover</h3>
+          <h2>About me</h2>
           <p class="intro">My name is Brayan and I'm a Software Development and Management Engineer. I ❤️ Exercise, Programming and Video Games.</p>
         </div>
-        <div class="skills sectiontwo">
+          <!--
+          <div class="box">
+            <table cellspacing="10">
+              <tr>
+                  <td>
+                      <table>
+                          <tr>
+                              <td>
+                                <div class="skill-row">
+                                  <p>dfhdfhdfh</p>
+                                </div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                <div class="skill-row">
+                                  <p>fdhfdh</p>
+                                </div>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="skill-row">
+                                <p>dffdhg</p>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                      </table>
+                  </td>
+                  <td>
+                      <table class="table-soft">
+                          <tr>
+                              <td>
+                                <div class="skill-row">
+                                  <p>dhdfhh</p>
+                                </div>
+                              </td>
+                          </tr>
+                          <tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          </div>
+        
+        -->
+        <div class="skills sectiontwo" id="skills">
           <h2>My Skills.</h2>
           <table cellspacing="10">
             <tr>
@@ -47,7 +122,7 @@
                               <div class="skill-row">
                                 <img class="code-img-right" src="https://cdn-icons-png.flaticon.com/512/8750/8750793.png" width="200px" height="200px" alt="">
                                 <h3>Movile Developer</h3>
-                                <p>I learned mobile development with flutter at my university <a href="https://utsh.edu.mx/">UTSH</a> and in a course I took on <a href="https://www.udemy.com/">Udemy</a> by Ing. Fernando Herrera.</p>
+                                <p>I learned mobile development with flutter at my university <a class="red" href="https://utsh.edu.mx/">UTSH</a> and in a course I took on <a class="red" href="https://www.udemy.com/">Udemy</a> by Ing. Fernando Herrera.</p>
                               </div>
                             </td>
                         </tr>
@@ -56,7 +131,7 @@
                             <div class="skill-row">
                               <img class="code-img" src="https://cdn-icons-png.flaticon.com/512/3344/3344322.png" width="200px" height="200px" alt="">
                               <h3>Java Developer</h3>
-                              <p>I learned to program in java in a training course for the oracle Certified Associate Java SE 8 Programmer test, which was taught by the company <a href="https://www.develop.com.mx">Develop</a></p>
+                              <p>I learned to program in java in a training course for the oracle Certified Associate Java SE 8 Programmer test, which was taught by the company <a class="red" href="https://www.develop.com.mx">Develop</a></p>
                             </div>
                           </td>
                       </tr>
@@ -65,7 +140,7 @@
                           <div class="skill-row">
                             <img class="code-img-right" src="https://cdn-icons-png.flaticon.com/512/8345/8345944.png" width="200px" height="200px" alt="">
                             <h3>Robotic Developer</h3>
-                            <p>I learned a bit of robotics in a course taught by <a href="https://roboticamexicana.org/">ARACT UNAM</a>, which I took level 1 of robotics with them, and it was in the period of January-March 2022.</p>
+                            <p>I learned a bit of robotics in a course taught by <a class="red" href="https://roboticamexicana.org/">ARACT UNAM</a>, which I took level 1 of robotics with them, and it was in the period of January-March 2022.</p>
                           </div>
                         </td>
                       </tr>
@@ -74,7 +149,7 @@
                           <div class="skill-row">
                             <img class="code-img" src="https://cdn-icons-png.flaticon.com/512/1320/1320848.png" width="200px" height="200px" alt="">
                             <h3>Design</h3>
-                          <p>I also learned a bit about design with <a href="https://www.develop.com.mx">Develop</a>, taking an Adobe Certified Associate in Graphics Design & Illustration Using Adobe Illustation CC 2015 certification course.</p>
+                          <p>I also learned a bit about design with <a class="red" href="https://www.develop.com.mx">Develop</a>, taking an Adobe Certified Associate in Graphics Design & Illustration Using Adobe Illustation CC 2015 certification course.</p>
                         </div>
                         </td>
                       </tr>
@@ -97,7 +172,7 @@
                               <div class="skill-row">
                                 <img class="code-img" src="https://cdn-icons-png.flaticon.com/512/942/942781.png" width="200px" height="200px" alt="">
                                 <h3>Proactive</h3>
-                                <p>Some time ago I took a Scrum certification course at the <a href="https://www.develop.com.mx">Develop</a> company together with the <a href="https://certiprof.com/">Certiprof</a> company, and that helped me to be more active and fulfill all my tasks.</p>
+                                <p>Some time ago I took a Scrum certification course at the <a class="red" href="https://www.develop.com.mx">Develop</a> company together with the <a class="red" href="https://certiprof.com/">Certiprof</a> company, and that helped me to be more active and fulfill all my tasks.</p>
                               </div>
                             </td>
                         </tr>
@@ -106,7 +181,7 @@
                               <div class="skill-row">
                                 <img class="code-img-right" src="https://cdn-icons-png.flaticon.com/512/3160/3160778.png" width="200px" height="200px" alt="">
                                 <h3>Capacity for teamwork</h3>
-                                <p>Some time ago also I took a Remote Working and Virtual Collaboration certification course at the <a href="https://www.develop.com.mx">Develop</a> company together with the <a href="https://certiprof.com/">Certiprof</a> company, and that helped me see the importance of teamwork and how to carry it out.</p>
+                                <p>Some time ago also I took a Remote Working and Virtual Collaboration certification course at the <a class="red" href="https://www.develop.com.mx">Develop</a> company together with the <a class="red" href="https://certiprof.com/">Certiprof</a> company, and that helped me see the importance of teamwork and how to carry it out.</p>
                               </div>
                             </td>
                         </tr>
@@ -134,7 +209,7 @@
         </table>
         </div>
         <center>
-          <div class="skills">
+          <div class="skills" id="academic">
             <h2>Academic</h2>
             <table cellspacing="10">
               <tr>
@@ -144,7 +219,7 @@
                           <td>
                             <div class="skill-row">
                               <img class="code-img-right" src="img/cbtis5.jpg" width="200px" height="200px" alt="">
-                              <h3><a href="https://www.cbtis5.edu.mx/sitio/">CBTis 5</a></h3>
+                              <h3><a class="red" href="https://www.cbtis5.edu.mx/sitio/">CBTis 5</a></h3>
                               <p>I studied in CBTIS 5 Programming Technician, in the period of August 2016 - June 2019.</p>
                             </div>
                           </td>
@@ -153,7 +228,7 @@
                               <td>
                                 <div class="skill-row">
                                   <img class="code-img" src="img/utsh1.jpg" width="200px" height="200px" alt="">
-                                  <h3><a href="https://utsh.edu.mx/">UTSH</a></h3>
+                                  <h3><a class="red" href="https://utsh.edu.mx/">UTSH</a></h3>
                                   <p>I studied a multiplatform software development technician at UTSH in the period July 2019 - July 2021.</p>
                                 </div>
                               </td>
@@ -162,7 +237,7 @@
                             <td>
                               <div class="skill-row">
                                 <img class="code-img-right" src="img/utsh1.jpg" width="200px" height="200px" alt="">
-                                <h3><a href="https://utsh.edu.mx/">UTSH</a></h3>
+                                <h3><a class="red" href="https://utsh.edu.mx/">UTSH</a></h3>
                                 <p>I studied software development and management engineering at UTSH in the period August 2021 - April 2023.</p>
                               </div>
                             </td>
@@ -174,7 +249,7 @@
           </div>
         </center>
         <center>
-        <div class="skills sectiontwo">
+        <div class="skills sectiontwo" id="experience">
           <h2>Work Experience</h2>
           <table cellspacing="10">
             <tr>
@@ -184,7 +259,7 @@
                             <td>
                               <div class="skill-row">
                                 <img class="code-img" src="img/utsh1.jpg" width="200px" height="200px" alt="">
-                                <h3>Software Developer in <a href="https://utsh.edu.mx/">UTSH</a></h3>
+                                <h3>Software Developer in <a class="red" href="https://utsh.edu.mx/">UTSH</a></h3>
                                 <p>I was working as a developer for UTSH, there I made a software for the Hidalgo government with PHP, HTML, BOOTSTRAP, CSS and MySQL technologies, during the period January - June 2022.</p>
                               </div>
                             </td>
@@ -202,8 +277,8 @@
                           <td>
                             <div class="skill-row">
                               <img class="code-img" src="img/logoaj.jpg" width="200px" height="200px" alt="">
-                              <h3>Software Developer in <a href="http://www.aj-electronic-design.com/">AJ Electronic Design</a></h3>
-                              <p>This is my current job, I have worked here since October 2022 and I have made several softwares for several companies including <a href="https://www.bosch.com.mx/nuestra-compania/bosch-en-mexico/guadalajara/">BOSCH</a> and <a href="https://www.emedtc.com/">EMED</a>.</p>
+                              <h3>Software Developer in <a class="red" href="http://www.aj-electronic-design.com/">AJ Electronic Design</a></h3>
+                              <p>This is my current job, I have worked here since October 2022 and I have made several softwares for several companies including <a class="red" href="https://www.bosch.com.mx/nuestra-compania/bosch-en-mexico/guadalajara/">BOSCH</a> and <a class="red" href="https://www.emedtc.com/">EMED</a>.</p>
                             </div>
                           </td>
                       </tr>
@@ -213,20 +288,20 @@
         </table>
         </div>
       </center>
-        <div class="contact-me">
+        <div class="contact-me" id="contact">
           <h2>Get In Touch</h2>
           <h3>If you love hot wings as much as i do.</h3>
           <p class="contact-message">Love hot wings as much as i do? Let's talk about how awesome they are! We can code While we eat hot wings.</p>
-          <a class="btn" href="mailto:olivaresbrayan0510@gmail.com">CONTACT ME</a>
+          <a class="btn" href="mailto:olivaresbrayan0510@gmail.com">Get Started</a>
         </div>
       </div>
       
-      <div class="botton-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/brayan-olivares-pe%C3%B1a-5666bb1b0">LinkedIn</a>
-        <a class="footer-link" href="https://www.facebook.com/brayan.olivares.52643/">Facebook</a>
-        <a class="footer-link" href="https://github.com/BestBroth05">GitHub</a>
+      <div class="botton-container" id="contact-2">
+        <a class="footer-link red" href="https://www.linkedin.com/in/brayan-olivares-pe%C3%B1a-5666bb1b0">LinkedIn</a>
+        <a class="footer-link red" href="https://www.facebook.com/brayan.olivares.52643/">Facebook</a>
+        <a class="footer-link red" href="https://github.com/BestBroth05">GitHub</a>
         <p class="copyright">© 2023 Brayan Olivares.</p>
       </div>
-      
+       
 </body>
 </html>
